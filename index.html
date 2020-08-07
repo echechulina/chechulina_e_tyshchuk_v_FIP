@@ -4,23 +4,29 @@
     <meta charset="UTF-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>HOME</title>
     <link href="css/reset.css" rel="stylesheet" type="text/css">
     <link href="css/main.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <link href="//db.onlinewebfonts.com/c/65b91445dc36d10df9dd20777e01f38d?family=Sentinel+Medium" rel="stylesheet" type="text/css"/>
+    <title>HOME</title>
 </head>
 <body>
   <div id="container">
   		<header id=mainHeader>
         <nav id="mainNav">
+        <button id="button"></button>
+        <section id="burgerCon">
 				<h2 class="hidden">Main Navigation</h2>
-				<ul>
+				<ul class="burgerMenu">
 					<li><a href="index.html">HOME</a></li>
 					<li><a href="about.html">ABOUT US</a></li>
 					<li><a href="products.html">PRODUCTS</a></li>
 					<li><a href="advert.html">ADVERT</a></li>
 					<li><a href="contact.html">CONTACT</a></li>
 				</ul>
-			</nav>
+			</section>
+
+      </nav>
       <nav id="signupNav">
         <ul>
           <li><a href="contact.html">SIGN UP</a></li>
@@ -30,103 +36,113 @@
       </header>
 
       <main>
-        <div class="delimiter">
-        </div>
-
     <section class="banner">
       <h2 class="hidden">Banner</h2>
       <div id="logo">
-				<img src="images/logo.svg" alt=" Anusol logo " width="350" height="250">
+				<img src="images/logo_main.svg" alt=" Anusol logo ">
 			</div>
-      <h2 class="tagline">#1 DOCTOR RECOMMENDED</h2>
+      <h2 class="tagline">#1 Doctor recommended</h2>
     </section>
 
- <div class="delimiter">
+ <div class="delimeter">
  </div>
 
- <div class="mainContent">
-   <h2>ANNOUNCEMENT</h2>
-   <div class="announcment">
-   <section class="news">
-   <img src="images/page.jpg" alt="magazine" width="300" height="420">
-   </section>
-   <section class="text">
-   <article class="text_area">
-     <p class="attention">ATTENTION!</p>
-     <p class="magazine">We are happy to inform you that next week we are launching our first magazine "ANNUSOL". Follow our news and updates.</p>
-     <p class="magazine">Sincerely, your team "ANNUSOL".</p>
-   </article>
- </section>
-</div>
- </div>
+       <div class="mainContent">
+             <h2 class="header">OUR CREATIONS</h2>
+               <div class="creations">
+                   <section class="bottles">
+                       <img src="images/craft_lager.svg" alt="beer">
+                       <img src="images/cream_ale.svg" alt="beer">
+                       <img src="images/mad_tom.svg" alt="beer">
+                    </section>
+                       <section class="text">
+                           <article class="text_area">
+                             <h2 class="hidden">Txt</h2>
+                                <p>Relaxation, relief from mental pain, mental itching and mood improvement are the feelings that our wide range of products will bring to you.</p> <p>We are ready to offer you various types of beer that will please even the most strict beer connoisseurs.</p>
+                           </article>
 
- <div class="delimiter">
- </div>
+                               <button class="learn learn1">LEARN MORE</button>
 
- <div class="signupContent">
-   <section class="form">
-     <h2 class="hidden">Form</h2>
-   <form id="firstName">
-     <input type="text" placeholder="FIRST NAME">
-   </form>
-   <form id="birthday">
-   <input type="text" placeholder="MM/DD/YYYY"
-                    onfocus="(this.type='date')">
-                  </form>
-   <form id="email">
-     <input type="email" placeholder="EMAIL">
-   </form>
-   <form id="postal_code">
-     <input type="text" placeholder="POSTAL CODE">
-   </form>
- </section>
-<section class="submit">
- <input type="submit" value="SIGN UP">
-</section>
-</div>
+                       </section>
+              </div>
+       </div>
 
-<div class="delimiter">
-</div>
+     <div class="delivery">
+       <section class="moving">
+         <h2>We bring relief to your home…</h2>
+         <img src="images/truck.svg" alt="truck">
+         <img src="images/house.svg" alt="home">
+       </section>
+       <section class="service">
+         <article class="deliveryInfo">
+           <h2>Our delivery service</h2>
+             <p>For all our voracious beer fans, we are ready to offer year-round delivery of your favorite drink right to your door. Our close-knit team of professionals is ready for anything to always have Anusol in your refrigerator!</p>
+         </article>
+         <button class="learnd learn2">LEARN MORE</button>
+       </section>
+     </div>
+
+
+         <div class="signupContent">
+           <h2>Sign up to be the first to learn about news, promotions and our products!</h2>
+               <section class="form">
+                 <h2 class="hidden">Form</h2>
+                     <form id="firstName">
+                       <input type="text" placeholder="FIRST NAME">
+                     </form>
+                         <form id="birthday">
+                            <input type="text" placeholder="BIRTHDAY" onfocus="(this.type='date')">
+                         </form>
+                             <form id="email">
+                               <input type="email" placeholder="EMAIL">
+                             </form>
+                               <form id="postal_code">
+                                 <input type="text" placeholder="POSTAL CODE">
+                               </form>
+               </section>
+
+                  <section class="submit">
+                       <input type="submit" value="SIGN UP">
+                  </section>
+         </div>
 
 </main>
 
-<footer id="mainFooter">
-  <div class="socialMedia1">
-    <h2 class="hidden">Social Media</h2>
-        <section id="facebook">
-          <a href="http://www.facebook.com">
-            <img src="images/facebook.svg" alt="facebook">
-          </a>
-        </section>
-        <section id="twitter">
-          <a href="http://www.twitter.com">
-            <img src="images/tweeter.svg" alt="twitter">
-          </a>
-        </section >
+      <footer id="mainFooter">
+          <h2 class="hidden">Social Media</h2>
+              <section id="facebook">
+                <a href="http://www.facebook.com">
+                  <img src="images/facebook.svg" alt="facebook">
+                </a>
+              </section>
+              <section id="twitter">
+                <a href="http://www.twitter.com">
+                  <img src="images/tweeter.svg" alt="twitter">
+                </a>
+              </section >
 
-  </div>
-  <div class="logoNav">
-        <div class="logoFooter">
-          <a href="index.html"><img src="images/logo_2.svg" alt="Anusol" width="350" height="250"></a>
-        </div>
-      </div>
-      <div class="socialMedia2">
-        <h2 class="hidden">Social Media</h2>
 
-          <section id="instagram">
-            <a href="http://www.instagram.com">
-              <img src="images/instagram.svg" alt="instagram" >
-            </a>
-         </section>
-            <section id="youtube">
-              <a href="https://www.youtube.com/">
-                <img src="images/youtube.svg" alt="youtube">
-              </a>
-            </section>
+              <div class="logoFooter">
+                <a href="index.html"><img src="images/logo_footer.svg" alt="Anusol"></a>
+              </div>
 
-      </div>
 
-		</footer>
+              <h2 class="hidden">Social Media</h2>
+
+                <section id="instagram">
+                  <a href="http://www.instagram.com">
+                    <img src="images/instagram.svg" alt="instagram" >
+                  </a>
+               </section>
+                  <section id="youtube">
+                    <a href="https://www.youtube.com/">
+                      <img src="images/youtube.svg" alt="youtube">
+                    </a>
+                  </section>
+
+
+
+      		</footer>
 </div>
 <script src="js/main.js"></script>
 </body>
