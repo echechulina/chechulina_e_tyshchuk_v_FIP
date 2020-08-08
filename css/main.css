@@ -390,6 +390,7 @@ input[type=submit]{
 
 }
 
+
 /* part About page */
 
 .bannerAbout{
@@ -401,7 +402,108 @@ input[type=submit]{
 
 
 .history, .philosophy, .goals, .brewery, .team, .news{
-
   margin-top: 5px;
-
 }
+
+.aboutContent {
+
+  text-align: center;
+}
+
+@media screen and (min-width: 48em){
+
+#logo{
+  padding-top: 80px;
+}
+
+.title {
+  margin-top:60px;
+}
+
+.tagline {
+  margin-top: 30px;
+}
+
+.signupContent h2{
+  font-size: 20px;
+}
+.form{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  height: 170px;
+}
+.submit{
+  margin-top: -90px
+}
+}
+
+@media screen and (min-width: 48em){
+  .aboutContent{
+     display: grid;
+     grid-template-columns: 1fr 1fr;
+     grid-gap: 5px;
+
+   }
+    .goals, .brewery, .team, .news{
+     margin-top: 0px;
+     }
+     .history, .philosophy{
+      margin-top: 10px;
+    }
+}
+@media screen and (min-width: 64em){
+
+
+  .form{
+    padding-right: 120px;
+    padding-left: 120px;
+    height: 150px;
+  }
+  .submit{
+    margin-top: -70px
+  }
+}
+
+@media screen and (min-width: 64em){
+  .aboutContent{
+     display: grid;
+     grid-template-columns: 1fr 1fr 1fr;
+     grid-gap: 5px;
+
+   }
+     .brewery, .team, .news{
+     margin-top: 0px;
+     }
+     .history, .philosophy, .goals{
+      margin-top: 10px;
+    }
+}
+
+
+@media screen and (min-width: 80em){
+   body {
+      padding: 0px;
+      margin: 0px;
+   }
+   #container {
+     width: 1280px;
+     margin: 0px auto;
+   }
+
+   .form{
+     padding-right: 260px;
+     padding-left: 260px;
+   }
+}
+@media screen and (min-width: 80em) {
+   .aboutContent{
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-gap: 25px;
+    }
+
+    .brewery, .team, .news{
+    margin-top: -10px;
+    }
+ }
