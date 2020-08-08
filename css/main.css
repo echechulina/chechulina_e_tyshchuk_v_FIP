@@ -1,0 +1,407 @@
+*{
+  margin: 0;
+  border: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  color:white;
+  font-family: 'Merriweather', Arial, sans-serif;
+}
+
+.container{
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto 1fr;
+}
+
+#mainHeader{
+  background-color: #1C191A;
+  color: #F7F7F7;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 60px;
+}
+#mainNav{
+  display:flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+#mainNav button {
+  margin-left: auto;
+}
+
+#burgerCon{
+  display:none;
+  margin-top: 20px;
+}
+#burgerCon.slideToggle{
+  display: block;
+}
+
+#mainNav button{
+  background: url(../images/burger.svg) center no-repeat;
+  margin-top: 20px;
+  border: 0px;
+  width: 40px;
+  height: 40px;
+  transition: all 400ms ease;
+}
+
+#mainNav button.expanded{
+  -webkit-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+
+  transform: rotate(90deg);
+}
+
+#mainNav ul{
+  list-style-type: none;
+}
+#mainNav ul li a{
+  text-decoration: none;
+  color: #fff;
+}
+
+#mainNav li a {
+  display: block;
+  padding: 10px 0;
+  text-align: center;
+}
+
+#mainNav ul {
+  width: 200px;
+  height: 200px;
+background-color: #1C191A;
+}
+
+
+#mainNav ul li a:hover{
+color: #f1e7cf;
+}
+
+ #signupNav{
+  margin-top: 15px;
+  font-size: 18px;
+}
+
+#signupNav ul{
+  list-style-type: none;
+  margin-top: 10px;
+  margin-right: 30px;
+}
+
+#signupNav ul li{
+  display: inline;
+  font-size: 15px;
+  font-weight: 300;
+
+}
+
+#signupNav ul li a{
+  text-decoration: none;
+  color: #fff;
+  padding: 15px;
+}
+
+#signupNav ul li a:hover {
+  color: #f1e7cf;
+}
+
+.banner{
+  background-image: url(../images/bckgrnd_home.svg);
+  height: 540px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.title {
+  font-size: 35px;
+  font-weight: bold;
+  text-align: center;
+
+}
+.tagline{
+  text-align: center;
+  font-family: "Sentinel Medium";
+  font-size: 38px;
+  color: #f1e7cf;
+  text-shadow: 3px 4px 5px #0b0606;
+  font-style: italic;
+  font-weight: normal;
+  margin-top: 0px;
+}
+.taglineHome{
+  text-align: center;
+  font-family: "Sentinel Medium";
+  font-size: 38px;
+  color: #f1e7cf;
+  text-shadow: 3px 4px 5px #0b0606;
+  font-style: italic;
+  font-weight: normal;
+  margin-top: 20px;
+}
+
+.hidden{
+  display: none;
+}
+
+#logo{
+  padding-top: 180px;
+  display: flex;
+  justify-content: center;
+}
+
+.delimeter{
+  background-color: #d8ba84;
+  height: 30px;
+}
+
+.mainContent{
+  text-align: center;
+  color: #1C191A;
+}
+
+.header{
+  margin-top: 20px;
+  font-size: 18px;
+  color: #1C191A;
+  font-weight: bold;
+}
+
+.creations{
+  display: grid;
+  grid-template-columns: 1fr ;
+  grid-template-rows: 1fr;
+  height: 1700px;
+}
+
+.bottles{
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  margin-left: 170px;
+}
+
+.text_area{
+  margin-left: 100px;
+  margin-top: 20px;
+  font-size: 18px;
+  font-weight: normal;
+  width: 302px;
+  height: 216px;
+}
+
+.text{
+  text-align: center;
+}
+
+.learn{
+  border: 1px solid #d8ba84;
+  background: none;
+  font-family: 'Merriweather', sans-serif;
+  font-size: 18px;
+  cursor: pointer;
+  height: 44px;
+  padding: 4px 18px 4px 18px;
+  border-radius: 15px;
+  position: relative;
+  overflow: hidden;
+}
+.learn1{
+  color: #d8ba84;
+  margin-top: -20px;
+}
+
+.learn1:hover{
+  color:  #1C191A;
+}
+
+.learn1::before{
+  content: " ";
+  position: absolute;
+  left: 0;
+  width: 0%;
+  height: 100%;
+  background: #d8ba84;
+  z-index: -1;
+  transition: 0.8s ease;
+  -moz-transition: 0.8s ease;
+  -ms-transition: 0.8s ease;
+  -webkit-transition: 0.8s ease;
+}
+
+.learn1::before{
+  top: 0;
+  border-radius: 0 50% 50% 0%;
+}
+
+.learn1:hover::before{
+  width: 180%;
+}
+.learnd{
+  border: 1px solid #d8ba84;
+  background: rgba(216, 186, 132, 0.1);
+  font-family: 'Merriweather', sans-serif;
+  font-size: 18px;
+  cursor: pointer;
+  height: 44px;
+  padding: 4px 18px 4px 18px;
+  border-radius: 15px;
+  position: relative;
+  overflow: hidden;
+}
+.learn2{
+  color: #d8ba84;
+  margin-top: -20px;
+}
+
+.learn2:hover{
+  color:  #d8ba84;
+}
+
+.learn2::before{
+  content: " ";
+  position: absolute;
+  left: 0;
+  width: 0%;
+  height: 100%;
+  background: #d8ba84;
+  z-index: -1;
+  transition: 0.8s ease;
+  -moz-transition: 0.8s ease;
+  -ms-transition: 0.8s ease;
+  -webkit-transition: 0.8s ease;
+}
+
+.learn2::before{
+  top: 0;
+  border-radius: 0 50% 50% 0%;
+}
+
+.learn2:hover::before{
+  width: 180%;
+}
+
+.delivery{
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  background-image: url(../images/bckgrnd_home_delivery.svg);
+  background-size: cover;
+  color: #1C191A;
+  height: 430px;
+  margin-top: 20px;
+}
+
+.moving{
+  margin-top: 30px;
+  text-align: center;
+}
+
+.moving h2{
+  text-align: center;
+  color: #f1e7cf;
+  font-family: "Sentinel Medium";
+  font-style: italic;
+  font-weight: normal;
+  font-size: 24px;
+}
+
+.moving img{
+  margin-top: 30px;
+}
+
+.service{
+  margin-bottom: 80px;
+  text-align: center;
+}
+
+.service h2{
+  margin-top: 20px;
+  color: #d8ba84;
+  font-weight: normal;
+  font-size: 20px;
+}
+.deliveryInfo p{
+  margin-top: 10px;
+  color: #d8ba84;
+  font-size: 16px;
+  text-align: center;
+}
+.signupContent{
+  margin-top: 5px;
+  display: grid;
+  text-align: center;
+  color:#1C191A;
+  background-color:#d8ba84;
+}
+.signupContent h2{
+  margin-top: 20px;
+  font-size: 1em;
+  font-weight: bold;
+}
+
+input{
+  border: none;
+  background: #ffffff;
+  font-family: 'Merriweather', sans-serif;
+  font-size: 16px;
+  cursor: pointer;
+  width: 150px;
+  height: 50px;
+  padding: 4px 18px 4px 18px;
+  border-radius: 15px;
+  position: relative;
+  overflow: hidden;
+}
+.form{
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-gap: 5px;
+}
+.submit{
+margin-top: 15px;
+margin-bottom: 15px;
+}
+input[type=submit]{
+  background-color: #b5602e;
+  color: #fff;
+}
+
+#mainFooter{
+  margin-top: 5px;
+  background-color:#1C191A;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+#instagram, #youtube, #twitter,  #facebook{
+  margin-top: 70px;
+}
+
+.logoFooter {
+  margin-top: 10px;
+  margin-bottom: 10px;
+
+}
+
+/* part About page */
+
+.bannerAbout{
+  background-image: url(../images/bckgrnd_about_us.svg);
+  height: 538px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+
+.history, .philosophy, .goals, .brewery, .team, .news{
+
+  margin-top: 5px;
+
+}
