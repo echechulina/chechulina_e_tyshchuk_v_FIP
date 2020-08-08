@@ -34,11 +34,6 @@ body{
   margin-left: auto;
 }
 
-#searchCon{
-  display: flex;
-  flex-direction: row;
-}
-
 #burgerCon{
   display:none;
   margin-top: 20px;
@@ -49,9 +44,10 @@ body{
 
 #mainNav button{
   background: url(../images/burger.svg) center no-repeat;
+  margin-top: 20px;
   border: 0px;
-  width: 20px;
-  height: 20px;
+  width: 40px;
+  height: 40px;
   transition: all 400ms ease;
 }
 
@@ -62,29 +58,34 @@ body{
   transform: rotate(90deg);
 }
 
+#mainNav ul{
+  list-style-type: none;
+}
+#mainNav ul li a{
+  text-decoration: none;
+  color: #fff;
+}
+
 #mainNav li a {
   display: block;
-  color: #8ea76d;
   padding: 10px 0;
   text-align: center;
 }
 
-#mainNav li{
-  border-bottom: 1px solid #efefef;
-}
-#mainNav li:first-child{
-  border-top: 1px solid #efefef;
-}
-#mainNav li:last-child {
-  margin-top: 10px;
+#mainNav ul {
+  width: 244px;
+  height: 246px;
+background-color: #1C191A;
 }
 
-#mainNav li:hover{
-background-color: #efefef;
+
+#mainNav ul li a:hover{
+color: #f1e7cf;
 }
 
  #signupNav{
-  margin: 20px 40px;
+  margin-top: 15px;
+  font-size: 18px;
 }
 
 #signupNav ul{
@@ -107,13 +108,14 @@ background-color: #efefef;
 }
 
 #signupNav ul li a:hover {
-  text-decoration: underline;
+  color: #f1e7cf;
 }
 
 .banner{
   background-image: url(../images/bckgrnd_home.svg);
   height: 540px;
   background-repeat: no-repeat;
+  background-position: center;
 }
 
 .tagline{
