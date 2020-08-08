@@ -53,10 +53,10 @@ body{
 }
 
 #mainNav button.expanded{
-  -webkit-transform: rotate(90deg);
-  -ms-transform: rotate(90deg);
+  -webkit-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
 
-  transform: rotate(90deg);
+  transform: rotate(-90deg);
 }
 
 #mainNav ul{
@@ -415,7 +415,7 @@ input[type=submit]{
   flex-direction: row;
 }
 .text_area{
-  font-size: 22px;
+  font-size: 19px;
 }
 .moving h2{
   font-size: 29px;
@@ -491,5 +491,9 @@ input[type=submit]{
      .form{
        padding-right: 260px;
        padding-left: 260px;
+     }
+     .text_area{
+       padding-left: 75px;
+       padding-right: 80px;
      }
 }
