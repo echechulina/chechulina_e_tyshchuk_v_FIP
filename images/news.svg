@@ -1,8 +1,6 @@
 
 <svg id="news" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="408" height="300" viewBox="0 0 408 300">
 
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="408" height="300" viewBox="0 0 408 300">
-
   <defs>
     <style>
       .cls-1 {
@@ -27,11 +25,6 @@
 
       .cls-5 {
 
-        stroke: none;
-      }
-
-      .cls-3 {
-
         fill: none;
       }
     </style>
@@ -49,10 +42,6 @@
   <g id="news-2" data-name="news" transform="translate(124 125)">
     <rect id="First_name" data-name="First name" class="cls-2" width="160" height="50" rx="14"/>
     <text id="NEWS-3" data-name="NEWS" class="cls-3" transform="translate(52 31.966)"><tspan x="0" y="0">NEWS</tspan></text>
-
-  <g id="image_1" data-name="image 1" class="cls-1">
-    <rect class="cls-2" width="408" height="300"/>
-    <rect class="cls-3" x="0.5" y="0.5" width="407" height="299"/>
 
   </g>
 </svg>
