@@ -152,6 +152,17 @@ color: #f1e7cf;
   padding-top: 180px;
   display: flex;
   justify-content: center;
+  animation: appear 1s;
+}
+
+@keyframes appear {
+  0% {
+    transform: scale(0.1);
+  }
+
+  100% {
+    transform: scale(1);
+  }
 }
 
 .delimeter{
@@ -598,7 +609,16 @@ margin-top: 20px;
 }
 
 @media screen and (min-width: 64em){
+.link {
+  text-align: left;
+  margin-top: 40px;
+}
 
+.info {
+  padding-left: 40px;
+  padding-right: 40px;
+
+}
   .promotion1 {
       display: flex;
     }
@@ -640,6 +660,14 @@ margin-top: 20px;
  }
 
  @media screen and (min-width: 80em) {
+
+   .info {
+     padding-left: 100px;
+     padding-right: 100px;
+
+   }
+
+
    .sp {
      display: none;
    }
@@ -651,7 +679,7 @@ margin-top: 20px;
    .spn {
      display: flex;
      transform: scale(3);
-     margin-left: 30px;
+     margin-left: 40px;
    }
 
    .august {
