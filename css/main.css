@@ -10,6 +10,8 @@ body{
   font-family: 'Merriweather', Arial, sans-serif;
 }
 
+
+
 .container{
   display: grid;
   grid-template-columns: 1fr;
@@ -48,6 +50,7 @@ button, input:focus {
 }
 
 
+
 #mainNav button{
   background: url(../images/burger.svg) center no-repeat;
   margin-top: 20px;
@@ -56,6 +59,7 @@ button, input:focus {
   height: 40px;
   transition: all 400ms ease;
 }
+
 #mainNav ul{
   list-style-type: none;
 }
@@ -74,15 +78,18 @@ button, input:focus {
   padding-left: 30px;
 }
 
+
 #mainNav ul li a:hover{
 color: #f1e7cf;
 }
+
 
 #signupNav ul li{
   display: inline;
   font-size: 18px;
   font-weight: normal
 }
+
 
  #signupNav{
   margin-top: 15px;
@@ -119,6 +126,7 @@ color: #f1e7cf;
   background-position: center;
 }
 
+
 .taglineHome{
   text-align: center;
   font-family: "Sentinel Medium";
@@ -127,10 +135,12 @@ color: #f1e7cf;
   text-shadow: 3px 4px 5px #0b0606;
   font-style: italic;
   font-weight: normal;
+
   margin-top: 20px;
 }
 
 .tagline{
+
   text-align: center;
   font-family: "Sentinel Medium";
   font-size: 38px;
@@ -138,6 +148,7 @@ color: #f1e7cf;
   text-shadow: 3px 4px 5px #0b0606;
   font-style: italic;
   font-weight: normal;
+
   margin-top: 13px;
 }
 
@@ -145,6 +156,7 @@ color: #f1e7cf;
   font-size: 30px;
   font-weight: bold;
   text-align: center;
+
 
 }
 
@@ -154,10 +166,12 @@ color: #f1e7cf;
 
 #logo{
   padding-top: 180px;
+
     display: flex;
     justify-content: center;
     animation: appear 1s;
 }
+
 @keyframes appear {
   0% {
     transform: scale(0.1);
@@ -188,12 +202,13 @@ color: #f1e7cf;
 }
 
 
+
 .creations{
   display: grid;
   height: 1700px;
 }
 
-.bottles{
+
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -204,6 +219,7 @@ color: #f1e7cf;
   font-size: 18px;
   font-weight: normal;
   margin-bottom: 30px;
+
 }
 
 .text{
@@ -232,6 +248,7 @@ color: #f1e7cf;
 }
 
 .learn1::before{
+
   content: "";
   position: absolute;
   left: 0;
@@ -253,6 +270,8 @@ color: #f1e7cf;
 .learn1:hover::before{
   width: 180%;
 }
+
+
 
 
 .delivery{
@@ -282,6 +301,7 @@ color: #f1e7cf;
 
 .moving img{
   margin-top: 30px;
+
   padding: 10px 10px;
 }
 #anim_block{
@@ -309,21 +329,25 @@ color: #f1e7cf;
 }
 .service{
   margin-bottom: 120px;
+
   text-align: center;
 }
 
 .service h2{
+
   margin-top: 40px;
   color: #d8ba84;
   font-weight: normal;
   font-size: 20px;
   margin-bottom: 20px;
+
 }
 .deliveryInfo p{
   margin-top: 10px;
   color: #d8ba84;
   font-size: 16px;
   text-align: center;
+
   margin-bottom:40px;
 }
 .learnd{
@@ -370,6 +394,7 @@ color: #f1e7cf;
   width: 180%;
 }
 
+
 .signupContent{
   margin-top: 5px;
   display: grid;
@@ -381,6 +406,7 @@ color: #f1e7cf;
   margin-top: 20px;
   font-size: 1em;
   font-weight: bold;
+
 }
 
 input{
@@ -411,9 +437,11 @@ input[type=submit]{
   background-color: #b5602e;
   color: #fff;
 }
+
 input[type=submit]:hover{
   transform: scale(1.1);
 }
+
 
 #mainFooter{
   margin-top: 5px;
@@ -422,6 +450,182 @@ input[type=submit]:hover{
   flex-direction: row;
   justify-content: center;
 }
+
+
+/* part About page */
+
+.bannerAbout{
+  background-image: url(../images/bckgrnd_about_us.svg);
+  height: 538px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+
+.history, .philosophy, .goals, .brewery, .team, .news{
+  margin-top: 5px;
+}
+
+.aboutContent {
+  text-align: center;
+}
+
+.aboutSection {
+    background-color: rgba(0, 0, 0, 0.7);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 150px 0 40px;
+    overflow: auto;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.4s ease;
+}
+
+.aboutNewText {
+    max-width: 434px;
+    margin: auto;
+    padding: 40px;
+    position: relative;
+}
+
+.aboutNewText h2 {
+  font-size: 20px;
+  font-family: 'Merriweather', sans-serif;
+  font-weight: normal;
+  text-align: center;
+}
+
+.aboutNewText p {
+  margin-top: 20px;
+  font-size: 16px;
+  font-family: 'Merriweather', sans-serif;
+  font-weight: normal;
+  line-height: 150%;
+  text-align: center;
+}
+
+#historyInfo, #philosophyInfo, #goalsInfo, #breweryInfo, #teamInfo, #newsInfo {
+    background-color: #1C191A;
+    background-size: cover;
+}
+
+.closeB {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width:30px;
+    height: 30px;
+    background-image: url(../images/button.png);
+    background-size: contain;
+}
+
+.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+.notactive {
+    overflow: hidden;
+}
+
+/*part Advert page */
+
+.bannerAdvert{
+  background-image: url(../images/bckgrnd_advert.svg);
+  height: 540px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.advertContent {
+  text-align: center;
+}
+
+.info p {
+  color: #1C191A;
+  font-size: 18px;
+  margin-top: -30px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.call h2 {
+  color: #1C191A;
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.link {
+color: #b5602e;
+font-size: 20px;
+font-weight: bold;
+padding-left: 20px;
+padding-right: 20px;
+margin-top: 20px;
+cursor: pointer;
+}
+
+.data {
+  color: #1C191A;
+  font-size: 20px;
+  text-align: left;
+  padding-left: 48px;
+  margin-top: 10px;
+}
+
+
+.aun {
+  display: none;
+}
+
+.jln {
+  display: none;
+}
+
+.promotion1 {
+  display: none;
+}
+
+.spn {
+  display: none;
+}
+.lightbox {
+	position: relative;
+	display: none;
+	position: absolute;
+	text-align: center;
+  background-color: #1C191A;
+
+}
+
+.lightbox video {
+  width: 100%;
+  padding-top: 40px;
+  outline: none;
+}
+
+
+.close {
+	margin-top: 25px;
+	margin-bottom: 25px;
+}
+
+.close h2 {
+	color: white;
+    text-transform: uppercase;
+    font-family: 'Merriweather', sans-serif;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+
+
 .logoFooter{
   margin-top: 10px;
   margin-bottom: 10px;
@@ -598,11 +802,13 @@ textarea{
   color: #fff;
 }
 
+
 @media screen and (min-width: 48em){
 
 #logo{
   padding-top: 80px;
 }
+
 .taglineHome{
   margin-top: 90px;
 }
@@ -622,6 +828,7 @@ textarea{
 .deliveryInfo p{
   font-size: 20px;
 }
+
 .signupContent h2{
   font-size: 20px;
 }
@@ -634,6 +841,76 @@ textarea{
 .submit{
   margin-top: -90px
 }
+
+}
+
+@media screen and (min-width: 48em){
+  .aboutContent{
+     display: grid;
+     grid-template-columns: 1fr 1fr;
+     grid-gap: 5px;
+
+   }
+    .goals, .brewery, .team, .news{
+     margin-top: 0px;
+     }
+     .history, .philosophy{
+      margin-top: 10px;
+    }
+}
+
+@media screen and (min-width: 48em) {
+  .adds {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 5px;
+  }
+
+  .june {
+
+    margin-top: 60px;
+  }
+
+  .july {
+    order: 4;
+    margin-top: -10px;
+
+  }
+
+  .september{
+    order: 2;
+  }
+
+  .august {
+    order: 3;
+    margin-top: -155px;
+  }
+
+.aun {
+    display: flex;
+    color: black;
+  }
+.au {
+    display: none;
+  }
+
+  .jln {
+      display: flex;
+      color: black;
+    }
+
+  .jl {
+      display: none;
+    }
+
+
+}
+
+@media screen and (min-width: 64em){
+
+  #button { display: none;}
+
+
 /*PRODUCTS*/
 .productsContent{
   display: grid;
@@ -673,6 +950,7 @@ textarea{
 #button {
    display: none;
 }
+
   #burgerCon {
     display: flex;
     flex-direction: column;
@@ -701,6 +979,129 @@ textarea{
     text-decoration: none;
     color: #6d6d6c;
   }
+
+
+  .form{
+    padding-right: 120px;
+    padding-left: 120px;
+    height: 150px;
+  }
+  .submit{
+    margin-top: -70px
+  }
+}
+
+@media screen and (min-width: 64em){
+  .aboutContent{
+     display: grid;
+     grid-template-columns: 1fr 1fr 1fr;
+     grid-gap: 5px;
+
+   }
+     .brewery, .team, .news{
+     margin-top: 0px;
+     }
+     .history, .philosophy, .goals{
+      margin-top: 10px;
+    }
+}
+
+@media screen and (min-width: 64em){
+.link {
+  text-align: left;
+  margin-top: 40px;
+  padding-left: 45px;
+}
+
+.info {
+  padding-left: 40px;
+  padding-right: 40px;
+
+}
+  .promotion1 {
+      display: flex;
+    }
+
+    .promotion2 {
+        display: none;
+      }
+
+    .august {
+        padding-top:25px;
+    }
+
+
+}
+
+@media screen and (min-width: 80em){
+   body {
+      padding: 0px;
+      margin: 0px;
+   }
+   #container {
+     width: 1280px;
+     margin: 0px auto;
+   }
+   #mainNav {
+     padding-left: 20px;
+   }
+
+   .form{
+     padding-right: 260px;
+     padding-left: 260px;
+   }
+}
+@media screen and (min-width: 80em) {
+   .aboutContent{
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-gap: 25px;
+    }
+
+    .brewery, .team, .news{
+    margin-top: -10px;
+    }
+ }
+
+ @media screen and (min-width: 80em) {
+
+   .info {
+     padding-left: 100px;
+     padding-right: 100px;
+
+   }
+
+
+   .sp {
+     display: none;
+   }
+
+   .rot {
+     display: flex;
+     flex-direction: row;
+   }
+   .spn {
+     display: flex;
+     transform: scale(3);
+     margin-left: 40px;
+   }
+
+   .august {
+       padding-top:75px;
+   }
+
+   .data {
+     font-size: 30px;
+   }
+
+  .lightbox {
+    width: 80.5%;
+  }
+   .lightbox video {
+     width: 60%;
+   }
+
+ }
 
 .text_area{
   text-align: left;
@@ -857,3 +1258,4 @@ justify-content: center;
 }
 
 }
+

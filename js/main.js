@@ -7,7 +7,9 @@
 
 	function hamburgerMenu() {
 		burgerCon.classList.toggle("slideToggle");
+
 		button.classList.toggle("expanded");
+
 	}
 
 	button.addEventListener("click", hamburgerMenu);
