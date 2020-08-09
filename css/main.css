@@ -164,8 +164,10 @@ color: #f1e7cf;
   color: #1C191A;
 }
 
-.header{
+.head{
+  text-align: center;
   margin-top: 20px;
+  margin-bottom: 50px;
   font-size: 18px;
   color: #1C191A;
   font-weight: bold;
@@ -342,6 +344,8 @@ color: #f1e7cf;
   margin-top: 20px;
   font-size: 1em;
   font-weight: bold;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 input{
@@ -410,6 +414,71 @@ input[type=submit]{
   text-align: center;
 }
 
+/*part Advert page */
+
+.bannerAdvert{
+  background-image: url(../images/bckgrnd_advert.svg);
+  height: 540px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.advertContent {
+  text-align: center;
+}
+
+.info p {
+  color: #1C191A;
+  font-size: 18px;
+  margin-top: -30px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.call h2 {
+  color: #1C191A;
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.link {
+color: #1C191A;
+font-size: 18px;
+font-weight: normal;
+padding-left: 20px;
+padding-right: 20px;
+margin-top: 20px;
+}
+
+.data {
+  color: #1C191A;
+  font-size: 20px;
+  text-align: left;
+  padding-left: 48px;
+  margin-top: 10px;
+}
+
+
+.aun {
+  display: none;
+}
+
+.jln {
+  display: none;
+}
+
+.promotion1 {
+  display: none;
+}
+
+.spn {
+  display: none;
+}
+
+
 @media screen and (min-width: 48em){
 
 #logo{
@@ -452,6 +521,54 @@ input[type=submit]{
       margin-top: 10px;
     }
 }
+
+@media screen and (min-width: 48em) {
+  .adds {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 5px;
+  }
+
+  .june {
+
+    margin-top: 60px;
+  }
+
+  .july {
+    order: 4;
+    margin-top: -10px;
+
+  }
+
+  .september{
+    order: 2;
+  }
+
+  .august {
+    order: 3;
+    margin-top: -155px;
+  }
+
+.aun {
+    display: flex;
+    color: black;
+  }
+.au {
+    display: none;
+  }
+
+  .jln {
+      display: flex;
+      color: black;
+    }
+
+  .jl {
+      display: none;
+    }
+
+
+}
+
 @media screen and (min-width: 64em){
 
 
@@ -480,6 +597,20 @@ input[type=submit]{
     }
 }
 
+@media screen and (min-width: 64em){
+
+  .promotion1 {
+      display: flex;
+    }
+
+    .promotion2 {
+        display: none;
+      }
+
+    .august {
+        padding-top:25px;
+    }
+}
 
 @media screen and (min-width: 80em){
    body {
@@ -506,4 +637,24 @@ input[type=submit]{
     .brewery, .team, .news{
     margin-top: -10px;
     }
+ }
+
+ @media screen and (min-width: 80em) {
+   .sp {
+     display: none;
+   }
+
+   .rot {
+     display: flex;
+     flex-direction: row;
+   }
+   .spn {
+     display: flex;
+     transform: scale(3);
+     margin-left: 30px;
+   }
+
+   .august {
+       padding-top:60px;
+   }
  }
