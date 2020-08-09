@@ -503,7 +503,7 @@ transform: scale(1.1);
 /*CONTACT PAGE*/
 
 .bannerContact{
-  background-image: url(../images/bckgrnd_contact.svg);
+  background-image: url(../images/bckgrnd_cont_mob.svg);
   height: 909px;
   background-repeat: no-repeat;
   background-position: center;
@@ -519,6 +519,12 @@ transform: scale(1.1);
   grid-template-rows: 1fr;
   grid-template-columns: 1fr;
   grid-gap: 5px;
+}
+.information img{
+  margin-top: 50px;
+}
+.anusBeer{
+
 }
 
 @media screen and (min-width: 48em){
