@@ -450,9 +450,9 @@ input[type=submit]{
 }
 
 .link {
-color: #1C191A;
-font-size: 18px;
-font-weight: normal;
+color: #b5602e;
+font-size: 20px;
+font-weight: bold;
 padding-left: 20px;
 padding-right: 20px;
 margin-top: 20px;
@@ -482,6 +482,37 @@ margin-top: 20px;
 .spn {
   display: none;
 }
+.lightbox {
+	position: relative;
+	display: none;
+	position: absolute;
+	text-align: center;
+
+
+  background-color: #1C191A;
+
+}
+
+.lightbox video {
+  width: 100%;
+  padding-top: 40px;
+  outline: none;
+}
+
+
+.close {
+	margin-top: 25px;
+	margin-bottom: 25px;
+}
+
+.close h2 {
+	color: white;
+    text-transform: uppercase;
+    font-family: 'Merriweather', sans-serif;
+    font-size: 20px;
+    cursor: pointer;
+}
+
 
 
 @media screen and (min-width: 48em){
@@ -717,5 +748,13 @@ margin-top: 20px;
    .data {
      font-size: 30px;
    }
+
+  .lightbox {
+    width: 80.5%;
+  }
+   .lightbox video {
+     width: 60%;
+   }
+
 
  }
