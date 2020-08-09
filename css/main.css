@@ -520,6 +520,9 @@ transform: scale(1.1);
   background-repeat: no-repeat;
   background-position: center;
 }
+.contactContent{
+  margin-top: -20px;
+}
 .titleCont{
   display: flex;
   justify-content: center;
@@ -802,6 +805,9 @@ padding-right: 100px;
 display: flex;
 justify-content: center;
 }
+.contactContent{
+  margin-top: 5px;
+}
 }
 @media screen and (min-width: 80em){
   body {
@@ -846,6 +852,9 @@ justify-content: center;
   display: flex;
   flex-direction: row;
   justify-content: center;
+}
+.contactContent{
+  margin-top: 5px;
 }
 
 }
