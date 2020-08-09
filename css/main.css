@@ -10,6 +10,10 @@ body{
   font-family: 'Merriweather', Arial, sans-serif;
 }
 
+button, input:focus {
+  outline: none;
+}
+
 .container{
   display: grid;
   grid-template-columns: 1fr;
@@ -28,16 +32,15 @@ body{
   display:flex;
   flex-direction: column;
   margin-bottom: 20px;
-}
-
-#mainNav button {
-  margin-left: auto;
+  justify-content: left;
 }
 
 #burgerCon{
   display:none;
+  text-decoration: none;
   margin-top: 20px;
 }
+
 #burgerCon.slideToggle{
   display: block;
 }
@@ -51,31 +54,22 @@ body{
   transition: all 400ms ease;
 }
 
-#mainNav button.expanded{
-  -webkit-transform: rotate(90deg);
-  -ms-transform: rotate(90deg);
-
-  transform: rotate(90deg);
-}
-
 #mainNav ul{
   list-style-type: none;
 }
 #mainNav ul li a{
   text-decoration: none;
   color: #fff;
+  font-size:18px;
+  font-family: 'Merriweather';
+  font-weight: normal;
 }
 
 #mainNav li a {
   display: block;
   padding: 10px 0;
   text-align: center;
-}
-
-#mainNav ul {
-  width: 200px;
-  height: 200px;
-background-color: #1C191A;
+  padding-left: 30px;
 }
 
 
@@ -96,8 +90,8 @@ color: #f1e7cf;
 
 #signupNav ul li{
   display: inline;
-  font-size: 15px;
-  font-weight: 300;
+  font-size: 18px;
+  font-weight: normal;
 
 }
 
@@ -582,6 +576,36 @@ margin-top: 20px;
 
 @media screen and (min-width: 64em){
 
+  #button { display: none;}
+
+  #burgerCon {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+  }
+
+  #mainNav {
+
+    text-transform: uppercase;
+    font-size: 18px;
+    margin-top:5px;
+  }
+
+  #burgerMenu {text-align: left;}
+
+  #mainNav li {
+    border-bottom: none;
+    display: inline;
+    margin-left: 20px;
+
+  }
+  #mainNav li a {
+
+    display: inline;
+    padding: 5px 0;
+    text-decoration: none;
+    color: #6d6d6c;
+  }
 
   .form{
     padding-right: 120px;
@@ -612,6 +636,7 @@ margin-top: 20px;
 .link {
   text-align: left;
   margin-top: 40px;
+  padding-left: 45px;
 }
 
 .info {
@@ -640,6 +665,9 @@ margin-top: 20px;
    #container {
      width: 1280px;
      margin: 0px auto;
+   }
+   #mainNav {
+     padding-left: 20px;
    }
 
    .form{
@@ -683,6 +711,11 @@ margin-top: 20px;
    }
 
    .august {
-       padding-top:60px;
+       padding-top:75px;
    }
+
+   .data {
+     font-size: 30px;
+   }
+
  }
