@@ -432,6 +432,7 @@ input[type=submit]{
   display: grid;
   grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
   grid-gap: 5px;
+  margin-top: 5px;
 }
 .craftLager{
   background-image: url(../images/one_m.svg);
@@ -499,6 +500,26 @@ background-color: #d8ba84;
 transform: scale(1.1);
 }
 
+/*CONTACT PAGE*/
+
+.bannerContact{
+  background-image: url(../images/bckgrnd_contact.svg);
+  height: 909px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.titleCont{
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+  padding-top: 40px;
+}
+.information{
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr;
+  grid-gap: 5px;
+}
 
 @media screen and (min-width: 48em){
 
@@ -544,7 +565,14 @@ transform: scale(1.1);
   grid-gap: 5px;
   margin-top: 5px;
 }
+.title {
+  margin-top:60px;
+}
 
+.tagline {
+  margin-top: 30px;
+}
+}
 @media screen and (min-width: 64em) {
   .header{
     text-align: right;
@@ -583,6 +611,55 @@ transform: scale(1.1);
 .submit{
   margin-top: -70px
 }
+
+/*PRODUCTS*/
+.craftLager{
+  background-image: url(../images/one.svg);
+  height: 450px;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding-left: 190px;
+}
+.creamAle{
+  background-image: url(../images/two.svg);
+  height: 450px;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding-left: 190px;
+}
+.madTom{
+  background-image: url(../images/three.svg);
+  height: 450px;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding-left: 190px;
+}
+.craftLagerNon{
+  background-image: url(../images/four.svg);
+  height: 450px;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding-left: 190px;
+}
+.creamAleNon{
+  background-image: url(../images/five.svg);
+  height: 450px;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding-left: 190px;
+}
+.madTomNon{
+  background-image: url(../images/three.svg);
+  height: 450px;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding-left: 190px;
+
+}
+.addtocart{
+  margin-top: 330px;
+}
+
 }
 @media screen and (min-width: 80em){
   body {
@@ -601,5 +678,13 @@ transform: scale(1.1);
      .text_area{
        padding-left: 75px;
        padding-right: 80px;
+     }
+     /*PRODUCTS*/
+     .productsContent{
+       display: grid;
+       grid-template-rows: 1fr 1fr;
+       grid-template-columns: 1fr 1fr;
+       grid-gap: 30px;
+       margin-top: 5px;
      }
 }
