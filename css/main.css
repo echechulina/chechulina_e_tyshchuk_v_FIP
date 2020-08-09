@@ -29,6 +29,7 @@ body{
   display:flex;
   flex-direction: column;
   margin-bottom: 20px;
+  justify-content: left;
 }
 
 #mainNav button {
@@ -38,10 +39,15 @@ body{
 #burgerCon{
   display:none;
   margin-top: 20px;
+  text-decoration: none;
 }
 #burgerCon.slideToggle{
   display: block;
 }
+button, input:focus {
+  outline: none;
+}
+
 
 #mainNav button{
   background: url(../images/burger.svg) center no-repeat;
@@ -51,39 +57,32 @@ body{
   height: 40px;
   transition: all 400ms ease;
 }
-
-#mainNav button.expanded{
-  -webkit-transform: rotate(-90deg);
-  -ms-transform: rotate(-90deg);
-
-  transform: rotate(-90deg);
-}
-
 #mainNav ul{
   list-style-type: none;
-  width: 200px;
-  height: 200px;
 }
 #mainNav ul li a{
   text-decoration: none;
   color: #fff;
+  font-size:18px;
+  font-family: 'Merriweather';
+  font-weight: normal;
 }
 
 #mainNav li a {
   display: block;
   padding: 10px 0;
   text-align: center;
+  padding-left: 30px;
 }
-
-#mainNav ul {
-  width: 244px;
-  height: 246px;
-background-color: #1C191A;
-}
-
 
 #mainNav ul li a:hover{
 color: #f1e7cf;
+}
+
+#signupNav ul li{
+  display: inline;
+  font-size: 18px;
+  font-weight: normal
 }
 
  #signupNav{
@@ -99,8 +98,8 @@ color: #f1e7cf;
 
 #signupNav ul li{
   display: inline;
-  font-size: 15px;
-  font-weight: 300;
+  font-size: 18px;
+  font-weight: normal;
 
 }
 
@@ -155,9 +154,19 @@ color: #f1e7cf;
 }
 
 #logo{
-display: flex;
-justify-content: center;
-padding-top: 220px;
+  padding-top: 180px;
+    display: flex;
+    justify-content: center;
+    animation: appear 1s;
+}
+@keyframes appear {
+  0% {
+    transform: scale(0.1);
+  }
+
+  100% {
+    transform: scale(1);
+  }
 }
 
 .delimeter{
@@ -403,6 +412,9 @@ input[type=submit]{
   background-color: #b5602e;
   color: #fff;
 }
+input[type=submit]:hover{
+  transform: scale(1.1);
+}
 
 #mainFooter{
   margin-top: 5px;
@@ -509,19 +521,23 @@ transform: scale(1.1);
   background-position: center;
 }
 .titleCont{
+  display: flex;
+  justify-content: center;
   font-size: 30px;
   font-weight: bold;
-  text-align: center;
   padding-top: 40px;
 }
-.information{
+.contContainer{
   display: grid;
   grid-template-rows: 1fr;
   grid-template-columns: 1fr;
-  grid-gap: 5px;
 }
 .information img{
   margin-top: 70px;
+}
+.information{
+  padding-left: 50px;
+  padding-right: 50px;
 }
 .anusBeer{
 font-size: 17px;
@@ -539,7 +555,7 @@ margin-bottom: 25px;
   font-weight: bold;
 }
 .toronto{
-  margin-bottom: 40px;
+  margin-bottom: 20px;
 }
 .contactUs{
   display: grid;
@@ -636,6 +652,12 @@ textarea{
   padding-left: 50px;
   padding-right: 50px;
 }
+.information{
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+
 }
 @media screen and (min-width: 64em) {
   .header{
@@ -646,6 +668,38 @@ textarea{
     flex-direction: row;
     justify-content: space-between;
 }
+#button {
+   display: none;
+}
+  #burgerCon {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+  }
+
+  #mainNav {
+
+    text-transform: uppercase;
+    font-size: 18px;
+    margin-top:5px;
+  }
+
+  #burgerMenu {text-align: left;}
+
+  #mainNav li {
+    border-bottom: none;
+    display: inline;
+    margin-left: 20px;
+
+  }
+  #mainNav li a {
+
+    display: inline;
+    padding: 5px 0;
+    text-decoration: none;
+    color: #6d6d6c;
+  }
+
 .text_area{
   text-align: left;
   padding-top: 80px;
@@ -729,23 +783,24 @@ textarea{
   height: 540px;
   background-repeat: no-repeat;
   background-position: center;
-  display:grid;
+}
+.contContainer{
+  display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
 }
 .contactUs{
-  order:1;
-  margin-top: 150px;
+  margin-top: 50px;
 }
 .information img{
-  margin-top: 30px;
+  margin-top: 50px;
 }
 .information{
-  order:2;
-  margin-top: -400px;
+padding-right: 100px;
 }
 .titleCont{
-  padding-left: 420px;
+display: flex;
+justify-content: center;
 }
 }
 @media screen and (min-width: 80em){
@@ -763,9 +818,14 @@ textarea{
        padding-left: 260px;
      }
      .text_area{
-       padding-left: 75px;
-       padding-right: 80px;
+       padding-left: 150px;
+       padding-right: 120px;
+       padding-bottom: 30px;
      }
+     .text button{
+      margin-bottom: 100px;
+     }
+
      /*PRODUCTS*/
      .productsContent{
        display: grid;
@@ -774,16 +834,18 @@ textarea{
        grid-gap: 30px;
        margin-top: 5px;
      }
-     /*Contact8*/
+     /*Contact*/
 .information{
-  margin-bottom: 150px;
+  margin-bottom: 10px;
   padding-left: 90px;
 }
 .information img{
-  margin-top: 30px;
+  margin-top: 50px;
 }
 .titleCont{
-  padding-left: 500px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
 
 }
