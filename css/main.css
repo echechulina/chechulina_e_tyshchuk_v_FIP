@@ -132,6 +132,24 @@ color: #f1e7cf;
   margin-top: 20px;
 }
 
+.tagline{
+  text-align: center;
+  font-family: "Sentinel Medium";
+  font-size: 38px;
+  color: #f1e7cf;
+  text-shadow: 3px 4px 5px #0b0606;
+  font-style: italic;
+  font-weight: normal;
+  margin-top: 13px;
+}
+
+.title {
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+
+}
+
 .hidden{
   display: none;
 }
@@ -402,6 +420,86 @@ input[type=submit]{
   margin-top: 70px;
 }
 
+/*PRODUCTS*/
+
+.bannerProducts{
+  background-image: url(../images/bckgrnd_home.svg);
+  height: 540px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.productsContent{
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-gap: 5px;
+}
+.craftLager{
+  background-image: url(../images/one_m.svg);
+  height: 550px;
+  background-repeat: no-repeat;
+  background-position: center;
+  text-align: center;
+}
+.creamAle{
+  background-image: url(../images/two_m.svg);
+  height: 550px;
+  background-repeat: no-repeat;
+  background-position: center;
+  text-align: center;
+}
+.madTom{
+  background-image: url(../images/three_m.svg);
+  height: 550px;
+  background-repeat: no-repeat;
+  background-position: center;
+  text-align: center;
+}
+.craftLagerNon{
+  background-image: url(../images/four_m.svg);
+  height: 550px;
+  background-repeat: no-repeat;
+  background-position: center;
+  text-align: center;
+}
+.creamAleNon{
+  background-image: url(../images/five_m.svg);
+  height: 550px;
+  background-repeat: no-repeat;
+  background-position: center;
+  text-align: center;
+}
+.madTomNon{
+  background-image: url(../images/three_m.svg);
+  height: 550px;
+  background-repeat: no-repeat;
+  background-position: center;
+  text-align: center;
+}
+.addtocart{
+border: 0px;
+background: #b5602e;
+font-family: 'Merriweather', sans-serif;
+font-size: 18px;
+cursor: pointer;
+height: 44px;
+padding: 4px 18px 4px 18px;
+border-radius: 15px;
+position: relative;
+overflow: hidden;
+}
+.add{
+color: #F1E7D0;
+margin-top: 490px;
+transition: all .2s ease-in-out;
+}
+
+.add:hover{
+color:  #1C191A;
+background-color: #d8ba84;
+transform: scale(1.1);
+}
+
+
 @media screen and (min-width: 48em){
 
 #logo{
@@ -438,7 +536,15 @@ input[type=submit]{
 .submit{
   margin-top: -90px
 }
+/*PRODUCTS*/
+.productsContent{
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 5px;
+  margin-top: 5px;
 }
+
 @media screen and (min-width: 64em) {
   .header{
     text-align: right;
