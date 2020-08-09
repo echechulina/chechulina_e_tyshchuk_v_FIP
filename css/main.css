@@ -521,10 +521,63 @@ transform: scale(1.1);
   grid-gap: 5px;
 }
 .information img{
-  margin-top: 50px;
+  margin-top: 70px;
 }
 .anusBeer{
-
+font-size: 17px;
+margin-top: 7px;
+margin-bottom: 25px;
+}
+.email{
+  font-size: 17px;
+}
+.tel{
+  margin-bottom: 25px;
+}
+.anusol{
+  font-size: 21px;
+  font-weight: bold;
+}
+.toronto{
+  margin-bottom: 40px;
+}
+.contactUs{
+  display: grid;
+  grid-gap: 15px;
+  text-align: center;
+}
+.name, .email, .telephone{
+  color:#fff;
+}
+input[value=""]{
+  background: none;
+  border: 1px solid #fff;
+  border-radius: 0px;
+  width: 400px;
+  padding: 4px 18px 4px 18px;
+  color: #fff;
+}
+textarea{
+  width: 400px;
+  background: none;
+  border: 1px solid #fff;
+  border-radius: 0px;
+  font-family: 'Merriweather', sans-serif;
+  font-size: 17px;
+  color:#fff;
+  padding: 15px 18px 4px 18px;
+}
+.subm{
+  background: none;
+  border: 1px solid #fff;
+  border-radius: 0px;
+  font-family: 'Merriweather', sans-serif;
+  font-size: 17px;
+  color:#fff;
+  padding: 15px 25px 15px 25px;
+}
+.white::placeholder{
+  color: #fff;
 }
 
 @media screen and (min-width: 48em){
@@ -572,11 +625,16 @@ transform: scale(1.1);
   margin-top: 5px;
 }
 .title {
-  margin-top:60px;
+  margin-top:50px;
 }
 
 .tagline {
   margin-top: 30px;
+}
+/*Contact*/
+.bannerContact{
+  padding-left: 50px;
+  padding-right: 50px;
 }
 }
 @media screen and (min-width: 64em) {
@@ -665,7 +723,30 @@ transform: scale(1.1);
 .addtocart{
   margin-top: 330px;
 }
-
+/*Contact*/
+.bannerContact{
+  background-image: url(../images/bckgrnd_contact.svg);
+  height: 540px;
+  background-repeat: no-repeat;
+  background-position: center;
+  display:grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+.contactUs{
+  order:1;
+  margin-top: 150px;
+}
+.information img{
+  margin-top: 30px;
+}
+.information{
+  order:2;
+  margin-top: -400px;
+}
+.titleCont{
+  padding-left: 420px;
+}
 }
 @media screen and (min-width: 80em){
   body {
@@ -693,4 +774,16 @@ transform: scale(1.1);
        grid-gap: 30px;
        margin-top: 5px;
      }
+     /*Contact8*/
+.information{
+  margin-bottom: 150px;
+  padding-left: 90px;
+}
+.information img{
+  margin-top: 30px;
+}
+.titleCont{
+  padding-left: 500px;
+}
+
 }
