@@ -4,40 +4,35 @@
 
 	let button = document.querySelector("#button");
 	 burgerCon = document.querySelector("#burgerCon");
-
-   openBox = document.querySelector('.lightbox');
-
-	 clickVideo = document.querySelector('.advertContent span');
-  closeVideo = document.querySelector('.close h2');
+	 body = document.querySelector('body');
+	 section = document.querySelectorAll('.aboutSection');
+	 closeBtn = document.querySelectorAll('.closeB');
+	 cards = document.querySelectorAll('.card');
 
 
 	function hamburgerMenu() {
 		burgerCon.classList.toggle("slideToggle");
 	}
 
-  function openLightbox() {
-		console.log('function work');
-		// openBox.classList.add('.lightboxTRAA-on');
-		// openBox.classList.remove('lightboxTRAA');
-		openBox.style.display = 'block';
 
+	for (let i = 0; i < cards.length; i++) {
+	    cards[i].addEventListener('click', function (event) {
+	        event.preventDefault();
+
+	        section[i].classList.add('active');
+	        body.classList.add('notactive');
+	    })
 	}
 
-	// function for close the pop-up window
+	for (let i = 0; i < cards.length; i++) {
+	    closeBtn[i].addEventListener('click', function () {
+	        event.preventDefault();
 
-	function closeWindow() {
-		openBox.style.display = 'none';
+	        section[i].classList.remove('active');
+	        body.classList.remove('notactive')
+	    })
 	}
 
-	// for images hide and show
-
-
-
-
-    clickVideo.addEventListener('click', openLightbox );
-    closeVideo.addEventListener('click', closeWindow);
-
-
-	button.addEventListener("click", hamburgerMenu);
+button.addEventListener("click", hamburgerMenu);
 
 })();

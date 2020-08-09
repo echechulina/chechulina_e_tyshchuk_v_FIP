@@ -415,8 +415,68 @@ input[type=submit]{
 }
 
 .aboutContent {
-
   text-align: center;
+}
+
+.aboutSection {
+    background-color: rgba(0, 0, 0, 0.7);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 150px 0 40px;
+    overflow: auto;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.4s ease;
+}
+
+.aboutNewText {
+    max-width: 434px;
+    margin: auto;
+    padding: 40px;
+    position: relative;
+}
+
+.aboutNewText h2 {
+  font-size: 20px;
+  font-family: 'Merriweather', sans-serif;
+  font-weight: normal;
+  text-align: center;
+}
+
+.aboutNewText p {
+  margin-top: 20px;
+  font-size: 16px;
+  font-family: 'Merriweather', sans-serif;
+  font-weight: normal;
+  line-height: 150%;
+  text-align: center;
+}
+
+#historyInfo, #philosophyInfo, #goalsInfo, #breweryInfo, #teamInfo, #newsInfo {
+    background-color: #1C191A;
+    background-size: cover;
+}
+
+.closeB {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width:30px;
+    height: 30px;
+    background-image: url(../images/button.png);
+    background-size: contain;
+}
+
+.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+.notactive {
+    overflow: hidden;
 }
 
 /*part Advert page */
@@ -456,6 +516,7 @@ font-weight: bold;
 padding-left: 20px;
 padding-right: 20px;
 margin-top: 20px;
+cursor: pointer;
 }
 
 .data {
@@ -487,8 +548,6 @@ margin-top: 20px;
 	display: none;
 	position: absolute;
 	text-align: center;
-
-
   background-color: #1C191A;
 
 }
@@ -686,6 +745,8 @@ margin-top: 20px;
     .august {
         padding-top:25px;
     }
+
+
 }
 
 @media screen and (min-width: 80em){
@@ -755,6 +816,5 @@ margin-top: 20px;
    .lightbox video {
      width: 60%;
    }
-
 
  }
